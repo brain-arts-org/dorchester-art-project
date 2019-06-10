@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "name": "dorchester-art-project",
+  "builds": [{ "src": "next.config.js", "use": "@now/next" }],
+  "env": {
+    "TAKESHAPE_PROJECT": "@takeshape-project",
+    "TAKESHAPE_TOKEN": "@takeshape-token"
+  },
+  "build": {
+    "env": {
+      "TAKESHAPE_PROJECT": "@takeshape-project",
+      "TAKESHAPE_TOKEN": "@takeshape-token"
+    }
+  }
+}
