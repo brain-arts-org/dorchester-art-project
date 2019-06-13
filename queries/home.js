@@ -1,6 +1,6 @@
 const homeQuery = `
   query {
-    getHomePage {
+    homePage: getHomePage {
       artistsSection {
         backgroundImage {
           path

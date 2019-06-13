@@ -4,10 +4,46 @@ import { getImageUrl } from "takeshape-routing";
 import Layout from "../layouts/default";
 import TakeShape from "../api/takeshape";
 import { homeQuery, navQuery, footerQuery } from "../queries";
+import { Container, Section, Grid, MediaQueries, P } from "../style";
 
-const Home = ({ navData, footerData, homeData }) => (
+const TextBox = styled.div`
+  padding: 40px 30px;
+  background-color: rgba(0, 0, 0, 0.8);
+`;
+
+const CoverSection = styled(Section)`
+  padding: 200px 0 50px;
+
+  ${MediaQueries.SMALL} {
+    padding: 50px 0;
+  }
+`;
+
+const CoverTextBox = styled(TextBox)`
+  grid-column: span 8;
+
+  ${MediaQueries.SMALL} {
+    grid-column: span 12;
+  }
+`;
+
+const Home = ({ navData, footerData, pageData }) => (
   <Layout navData={navData} footerData={footerData}>
-    <h1>Dorchester Art Project</h1>
+    <CoverSection id="section-cover" section={pageData.coverSection}>
+      <Container>
+        <Grid>
+          <CoverTextBox>
+            <P>{pageData.coverSection.blurb}</P>
+          </CoverTextBox>
+        </Grid>
+      </Container>
+    </CoverSection>
+    <Section id="section-gallery" />
+    <Section id="section-events" />
+    <Section id="section-artists" />
+    <Section id="section-rentals" />
+    <Section id="section-zineLib" />
+    <Section id="section-faq" />
   </Layout>
 );
 

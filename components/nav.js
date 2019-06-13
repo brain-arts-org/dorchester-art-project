@@ -48,6 +48,11 @@ const NavToggle = styled.button`
   text-transform: uppercase;
   display: block;
   margin: 0 auto;
+  cursor: pointer;
+
+  &:hover {
+    background-color: ${Colors.TEAL};
+  }
 `;
 
 const NavLinks = styled.ul`
@@ -59,7 +64,7 @@ const NavLinks = styled.ul`
     padding-top: ${({ open }) => (open ? "20px" : 0)};
     position: static;
     width: 100%;
-    height: ${({ open }) => (open ? "270px" : 0)};
+    height: ${({ open }) => (open ? "275px" : 0)};
     overflow: hidden;
     flex-direction: column;
     transition: height 0.5s, padding-top 0.5s;
@@ -69,7 +74,7 @@ const NavLinks = styled.ul`
 const NavLink = styled.li`
   transform: perspective(10px) rotateY(-1deg);
   margin-right: 20px;
-  margin-top: ${({ offset }) => (offset ? "-5px" : 0)};
+  margin-top: ${({ isOffset }) => (isOffset ? "-5px" : 0)};
   a {
     background-color: ${Colors.OFF_BLACK};
     padding: 5px 20px;
@@ -88,13 +93,11 @@ const NavLink = styled.li`
     margin-top: 0;
     margin-right: 0;
     text-align: center;
-    padding: 20px 0;
 
     a {
       display: block;
-      padding: 0;
+      padding: 20px 0;
       width: 100%;
-      height: 100%;
       background-color: transparent;
     }
   }
@@ -133,7 +136,7 @@ class Nav extends Component {
                 return null;
               }
               return (
-                <NavLink key={index} offset={index % 2 === 1}>
+                <NavLink key={index} isOffset={false}>
                   <a href="#">{data[`${section}Link`].text}</a>
                 </NavLink>
               );
