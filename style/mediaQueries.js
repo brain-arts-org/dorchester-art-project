@@ -1,6 +1,6 @@
 const MediaQueries = {
-  small: "@media (max-width: 767px)",
-  medium: "@media (max-width: 992px)"
+  SMALL: "@media (max-width: 767px)",
+  MEDIUM: "@media (max-width: 992px)"
 };
 
 export default MediaQueries;

@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import Colors from "./colors";
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -15,6 +16,16 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     margin: 0;
+    font-family: DinAlternate;
+    font-weight: 400;
+    color: ${Colors.WHITE};
+  }
+
+  ul {
+    padding: 0;
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
   }
 `;
 
