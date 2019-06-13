@@ -8,8 +8,8 @@
   },
   "build": {
     "env": {
-      "TAKESHAPE_PROJECT": "@takeshape-project",
-      "TAKESHAPE_TOKEN": "@takeshape-token"
+      "TAKESHAPE_PROJECT": "@takeshape-project-dap",
+      "TAKESHAPE_TOKEN": "@takeshape-token-dap"
     }
   }
 }
