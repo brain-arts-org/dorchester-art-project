@@ -7,6 +7,21 @@ import Img from "./img";
 import H2 from "./h2";
 import H3 from "./h3";
 import H4 from "./h4";
+import H6 from "./h6";
 import P from "./p";
+import Label from "./label";
 
-export { Colors, Container, Section, Grid, MediaQueries, Img, H2, H3, H4, P };
+export {
+  Colors,
+  Container,
+  Section,
+  Grid,
+  MediaQueries,
+  Img,
+  Label,
+  H2,
+  H3,
+  H4,
+  H6,
+  P
+};

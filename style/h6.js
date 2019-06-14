@@ -2,14 +2,13 @@ import styled from "styled-components";
 import MediaQueries from "./mediaQueries";
 import Colors from "./colors";
 
-const H4 = styled.h4`
-  font-family: ChronicRegular;
+const H6 = styled.h6`
+  font-family: DinAlternate;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 10px;
-  text-align: center;
   ${MediaQueries.SMALL} {
   }
 `;
 
-export default H4;
+export default H6;

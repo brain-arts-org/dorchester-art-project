@@ -3,7 +3,7 @@ import { getImageUrl } from "takeshape-routing";
 
 const Section = styled.section`
   background: ${({ data }) =>
-    data
+    data.backgroundImage
       ? `url(${getImageUrl(data.backgroundImage.path)}) no-repeat center center`
       : "transparent"};
   background-size: cover;

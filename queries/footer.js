@@ -1,27 +1,25 @@
 const footerQuery = `
-  query {
-    footer: getFooter {
-      mainText
-      copyright
-      imageLinks {
-        image {
-          path
-        }
-        link
-        wide
+  footer: getFooter {
+    mainText
+    copyright
+    imageLinks {
+      image {
+        path
       }
-      textColor {
+      link
+      wide
+    }
+    textColor {
+      hex
+    }
+    background {
+      color {
         hex
       }
-      background {
-        color {
-          hex
-        }
-        image {
-          path
-        }
-        useImage
+      image {
+        path
       }
+      useImage
     }
   }
 `;

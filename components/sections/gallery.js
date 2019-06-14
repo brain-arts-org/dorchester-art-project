@@ -8,10 +8,11 @@ import {
   MediaQueries,
   Img,
   Colors,
+  Label,
   P,
   H2,
   H3,
-  H4
+  H6
 } from "../../style";
 
 const MainGrid = styled(Grid)`
@@ -20,23 +21,6 @@ const MainGrid = styled(Grid)`
 
 const GalleryGrid = styled(Grid)`
   grid-column-gap: 20px;
-`;
-
-const Label = styled.span`
-  background-color: ${Colors.BLACK};
-  padding: 10px 60px;
-  width: auto;
-  position: absolute;
-
-  ${MediaQueries.SMALL} {
-    display: block;
-    padding: 10px 0;
-    transform: none;
-    width: 180px;
-    left: 50%;
-    margin-left: -90px;
-    text-align: center;
-  }
 `;
 
 const OnViewBox = styled.div`
@@ -56,18 +40,23 @@ const OnViewBox = styled.div`
 const OnViewLabel = styled(Label)`
   top: -20px;
   left: -50px;
-  transform: rotate(-10deg);
 `;
 
 const TitleSection = styled.div`
   grid-column: span 3;
-  text-align: right;
+
+  h2 {
+    text-align: right;
+  }
 
   ${MediaQueries.SMALL} {
     order: 1;
     grid-column: span 12;
-    text-align: center;
     margin-bottom: 50px;
+
+    h2 {
+      text-align: center;
+    }
   }
 `;
 
@@ -113,7 +102,7 @@ const GalleryDisplay = ({ exhibit }) => (
       </Column>
     )}
     <Column full={!exhibit.image}>
-      <H4>{exhibit.exhibitName}</H4>
+      <H6>{exhibit.exhibitName}</H6>
       <P>{exhibit.exhibitBlurb}</P>
     </Column>
   </GalleryGrid>
@@ -124,7 +113,7 @@ const Gallery = ({ data }) => (
     <Container>
       <MainGrid>
         <OnViewBox>
-          <OnViewLabel>
+          <OnViewLabel tilt>
             <H3>{data.onViewExhibit.label}</H3>
           </OnViewLabel>
           <GalleryDisplay exhibit={data.onViewExhibit} />
