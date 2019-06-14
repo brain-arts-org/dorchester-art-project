@@ -14,6 +14,18 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 700;
   }
 
+  @font-face {
+    font-family: ChronicFilled;
+    src: url('/static/fonts/chronic_filled.ttf');
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: ChronicRegular;
+    src: url('/static/fonts/chronic_regular.ttf');
+    font-weight: 700;
+  }
+
   body {
     margin: 0;
     font-family: DinAlternate;
@@ -24,6 +36,11 @@ const GlobalStyle = createGlobalStyle`
   ul {
     padding: 0;
     list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
     margin-block-start: 0;
     margin-block-end: 0;
   }
