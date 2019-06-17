@@ -44,7 +44,7 @@ const ArtistName = styled(H6)`
 const CTAContainer = styled.div`
   width: 100%;
   text-align: right;
-  margin: 20px 0;
+  margin: 20px 0 10px;
 
   ${MediaQueries.SMALL} {
     text-align: center;

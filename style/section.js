@@ -7,7 +7,7 @@ const Section = styled.section`
       ? `url(${getImageUrl(data.backgroundImage.path)}) no-repeat center center`
       : "transparent"};
   background-size: cover;
-  padding: 50px 0 30px;
+  padding: 50px 0 40px;
 `;
 
 export default Section;
