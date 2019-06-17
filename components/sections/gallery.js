@@ -33,7 +33,7 @@ const OnViewBox = styled.div`
   ${MediaQueries.SMALL} {
     grid-column: span 12;
     order: 2;
-    padding-top: 60px;
+    padding: 60px 25px 30px;
   }
 `;
 
@@ -70,7 +70,7 @@ const UpcomingBox = styled.div`
   ${MediaQueries.SMALL} {
     grid-column: span 12;
     order: 3;
-    padding-top: 60px;
+    padding: 60px 25px 30px;
   }
 `;
 

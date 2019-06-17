@@ -17,6 +17,7 @@ const CoverTextBox = styled.div`
 
   ${MediaQueries.SMALL} {
     grid-column: span 12;
+    padding: 40px 25px;
   }
 `;
 
