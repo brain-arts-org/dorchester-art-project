@@ -68,7 +68,7 @@ const MobileCTAContainer = styled.div`
 const MobileCTA = styled(ButtonLink)``;
 
 const Rentals = ({ data }) => (
-  <Section data={data}>
+  <Section id="section-rentals" data={data}>
     <Container>
       <Grid>
         <InfoBox>

@@ -15,12 +15,12 @@ const Question = styled.div`
 `;
 
 const FAQ = ({ data }) => (
-  <Section data={data}>
+  <Section id="section-faq" data={data}>
     <Container>
       <H2>{data.title}</H2>
       <Questions>
         {data.questions.map((question, index) => (
-          <Question>
+          <Question key={index}>
             <H6>{question.question}</H6>
             <P>{question.answer}</P>
           </Question>

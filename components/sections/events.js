@@ -92,8 +92,6 @@ class Events extends Component {
     );
     return events.filter(event => {
       if (weekly) {
-        console.log(new Date(event.datetime));
-        console.log(nextWeek > new Date(event.datetime));
         return new Date(event.datetime) < nextWeek;
       } else {
         return new Date(event.datetime) >= nextWeek;
@@ -127,7 +125,7 @@ class Events extends Component {
           <Grid>
             <UpcomingSection>
               {upcomingEvents.map((event, index) => (
-                <UpcomingRow>
+                <UpcomingRow key={index}>
                   <UpcomingDate>
                     <Moment date={event.datetime} format="dddd M/D @ h:mm A" />
                   </UpcomingDate>

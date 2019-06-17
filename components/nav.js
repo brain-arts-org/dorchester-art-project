@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Link from "next/link";
 import styled from "styled-components";
+import A from "react-anchor-link-smooth-scroll";
 import { Colors, Container, MediaQueries } from "../style";
 
 const NavWrapper = styled.div`
@@ -137,7 +138,9 @@ class Nav extends Component {
               }
               return (
                 <NavLink key={index} isOffset={false}>
-                  <a href="#">{data[`${section}Link`].text}</a>
+                  <A href={`#section-${section}`}>
+                    {data[`${section}Link`].text}
+                  </A>
                 </NavLink>
               );
             })}

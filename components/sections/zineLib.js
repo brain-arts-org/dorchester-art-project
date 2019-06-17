@@ -32,7 +32,7 @@ const InfoBox = styled.div`
 `;
 
 const ZineLib = ({ data }) => (
-  <Section data={data}>
+  <Section id="section-zineLib" data={data}>
     <Container>
       <Grid>
         <OpenSpace>

@@ -59,7 +59,7 @@ const Artists = ({ data, artists }) => (
       <H2>{data.title}</H2>
       <ArtistGrid>
         {artists.map((artist, index) => (
-          <ArtistColumn>
+          <ArtistColumn key={index}>
             <ArtistImage src={getImageUrl(artist.photo.path)} />
             <ArtistName>
               {artist.url && <a href={artist.url}>{artist.name}</a>}
