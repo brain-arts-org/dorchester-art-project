@@ -14,7 +14,7 @@ const InfoBox = styled.div`
   grid-column: span 6;
   padding: 30px;
   background-color: rgba(0, 0, 0, 0.8);
-  padding-bottom: 200px;
+  min-height: 400px;
 
   ${MediaQueries.SMALL} {
     grid-column: span 12;
