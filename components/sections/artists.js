@@ -6,8 +6,7 @@ import {
   Section,
   Grid,
   MediaQueries,
-  Colors,
-  Label,
+  ButtonLink,
   Img,
   P,
   H2,
@@ -42,6 +41,18 @@ const ArtistName = styled(H6)`
   margin-top: 15px;
 `;
 
+const CTAContainer = styled.div`
+  width: 100%;
+  text-align: right;
+  margin: 20px 0;
+
+  ${MediaQueries.SMALL} {
+    text-align: center;
+  }
+`;
+
+const CTA = styled(ButtonLink)``;
+
 const Artists = ({ data, artists }) => (
   <Section id="section-artists" data={data}>
     <Container>
@@ -57,6 +68,9 @@ const Artists = ({ data, artists }) => (
           </ArtistColumn>
         ))}
       </ArtistGrid>
+      <CTAContainer>
+        <CTA href={data.ctaLink}>{data.ctaText}</CTA>
+      </CTAContainer>
     </Container>
   </Section>
 );

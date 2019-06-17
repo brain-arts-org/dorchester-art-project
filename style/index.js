@@ -4,6 +4,7 @@ import MediaQueries from "./mediaQueries";
 import Section from "./section";
 import Grid from "./grid";
 import Img from "./img";
+import ButtonLink from "./buttonLink";
 import H2 from "./h2";
 import H3 from "./h3";
 import H4 from "./h4";
@@ -19,6 +20,7 @@ export {
   MediaQueries,
   Img,
   Label,
+  ButtonLink,
   H2,
   H3,
   H4,
