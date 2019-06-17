@@ -1,6 +1,14 @@
 import React from "react";
 import Layout from "../layouts/default";
-import { Cover, Gallery, Events, Artists } from "../components/sections";
+import {
+  Cover,
+  Gallery,
+  Events,
+  Artists,
+  Rentals,
+  ZineLib,
+  FAQ
+} from "../components/sections";
 import TakeShape from "../api/takeshape";
 import query from "../queries";
 
@@ -10,6 +18,9 @@ const Home = ({ navData, footerData, pageData, events, artists }) => (
     <Gallery data={pageData.gallerySection} />
     <Events data={pageData.eventsSection} events={events} />
     <Artists data={pageData.artistsSection} artists={artists} />
+    <Rentals data={pageData.rentalsSection} />
+    <ZineLib data={pageData.zineLibSection} />
+    <FAQ data={pageData.faqSection} />
   </Layout>
 );
 
