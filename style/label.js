@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import MediaQueries from "./mediaQueries";
-import Colors from "./Colors";
+import Colors from "./colors";
 
 const Label = styled.span`
   background-color: ${Colors.BLACK};
