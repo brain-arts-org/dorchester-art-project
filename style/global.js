@@ -44,6 +44,10 @@ const GlobalStyle = createGlobalStyle`
     margin-block-start: 0;
     margin-block-end: 0;
   }
+
+  a:visited {
+    color: ${Colors.WHITE};
+  }
 `;
 
 export default GlobalStyle;

@@ -1,13 +1,11 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { getImageUrl } from "takeshape-routing";
 import Moment from "react-moment";
 import {
   Container,
   Section,
   Grid,
   MediaQueries,
-  Img,
   Colors,
   Label,
   P,
@@ -53,7 +51,7 @@ const WeekEvent = styled.div`
 `;
 
 const UpcomingSection = styled.div`
-  padding: 40px 0;
+  padding: 40px 0 0;
   margin-top: 20px;
   background-color: rgba(0, 0, 0, 0.8);
   grid-column: span 9;
@@ -64,14 +62,13 @@ const UpcomingSection = styled.div`
 
 const UpcomingRow = styled.div`
   display: flex;
-  padding: 15px 30px;
+  padding: 20px 30px;
   border-bottom: 1px solid #4a4a4a;
 
   ${MediaQueries.SMALL} {
     width: 100%;
     box-sizing: border-box;
-    margin-bottom: 25px;
-    padding: 15px 25px;
+    padding: 20px 25px;
   }
 `;
 
