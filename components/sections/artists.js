@@ -8,7 +8,7 @@ import {
   MediaQueries,
   ButtonLink,
   Img,
-  P,
+  Colors,
   H2,
   H3,
   H6
@@ -39,6 +39,14 @@ const ArtistImage = styled(Img)`
 
 const ArtistName = styled(H6)`
   margin-top: 15px;
+
+  a {
+    color: ${Colors.WHITE};
+
+    &:visited {
+      color: ${Colors.WHITE};
+    }
+  }
 `;
 
 const CTAContainer = styled.div`

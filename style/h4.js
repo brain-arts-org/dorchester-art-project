@@ -6,7 +6,7 @@ const H4 = styled.h4`
   font-family: ChronicRegular;
   font-weight: 700;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   text-align: center;
   ${MediaQueries.SMALL} {
   }
