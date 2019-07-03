@@ -77,7 +77,9 @@ const Artists = ({ data, artists }) => (
         ))}
       </ArtistGrid>
       <CTAContainer>
-        <CTA href={data.ctaLink}>{data.ctaText}</CTA>
+        <CTA href={data.ctaLink} target="_blank">
+          {data.ctaText}
+        </CTA>
       </CTAContainer>
     </Container>
   </Section>

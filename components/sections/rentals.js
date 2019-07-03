@@ -80,7 +80,9 @@ const Rentals = ({ data }) => (
         </OpenSpace>
       </Grid>
       <MobileCTAContainer>
-        <MobileCTA href={data.ctaLink}>{data.ctaText}</MobileCTA>
+        <MobileCTA href={data.ctaLink} target="_blank">
+          {data.ctaText}
+        </MobileCTA>
       </MobileCTAContainer>
     </Container>
   </Section>
