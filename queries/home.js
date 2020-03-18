@@ -18,7 +18,6 @@ const homeQuery = `
       backgroundImage {
         path
       }
-      disclaimer
       thisWeekLabel
       title
       upcomingLabel

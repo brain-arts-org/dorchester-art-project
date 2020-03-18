@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Markdown from "../markdown";
 import { Container, Section, Grid, MediaQueries, P } from "../../style";
 
 const CoverSection = styled(Section)`
@@ -26,7 +27,7 @@ const Cover = ({ data }) => (
     <Container>
       <Grid>
         <CoverTextBox>
-          <P>{data.blurb}</P>
+          <Markdown source={data.blurb} />
         </CoverTextBox>
       </Grid>
     </Container>

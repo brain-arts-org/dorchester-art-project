@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { getImageUrl } from "takeshape-routing";
-import { P, Colors, Container, MediaQueries, Img } from "../style";
+import Markdown from "./markdown";
+import { P, Container, MediaQueries, Img } from "../style";
 
 const FooterWrapper = styled.footer`
   background: ${props =>
@@ -76,9 +77,12 @@ const Footer = ({ data }) => (
           ))}
         </LinkSection>
         <TextSection>
-          <P size="small" color={data.textColor.hex} dark>
-            {data.mainText}
-          </P>
+          <Markdown
+            source={data.mainText}
+            size="small"
+            color={data.textColor.hex}
+            dark
+          />
           <Copyright color={data.textColor.hex} dark>
             {data.copyright}
           </Copyright>

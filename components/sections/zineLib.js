@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Markdown from "../markdown";
 import { Section, Container, Grid, MediaQueries, H2, P } from "../../style";
 
 const OpenSpace = styled.div`
@@ -39,7 +40,7 @@ const ZineLib = ({ data }) => (
           <Title>{data.title}</Title>
         </OpenSpace>
         <InfoBox>
-          <P>{data.mainText}</P>
+          <Markdown source={data.mainText} />
         </InfoBox>
       </Grid>
     </Container>

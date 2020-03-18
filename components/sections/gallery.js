@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { getImageUrl } from "takeshape-routing";
+import Markdown from "../markdown";
 import {
   Container,
   Section,
@@ -103,7 +104,7 @@ const GalleryDisplay = ({ exhibit }) => (
     )}
     <Column full={!exhibit.image}>
       <H6>{exhibit.exhibitName}</H6>
-      <P>{exhibit.exhibitBlurb}</P>
+      <Markdown source={exhibit.exhibitBlurb} />
     </Column>
   </GalleryGrid>
 );

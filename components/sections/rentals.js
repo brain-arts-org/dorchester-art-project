@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Markdown from "../markdown";
 import {
   Section,
   Container,
@@ -72,7 +73,7 @@ const Rentals = ({ data }) => (
     <Container>
       <Grid>
         <InfoBox>
-          <P>{data.mainText}</P>
+          <Markdown source={data.mainText} />
         </InfoBox>
         <OpenSpace>
           <Title>{data.title}</Title>
