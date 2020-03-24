@@ -45,6 +45,10 @@ const GlobalStyle = createGlobalStyle`
     margin-block-end: 0;
   }
 
+  a {
+    color: ${Colors.WHITE};
+  }
+
   a:visited {
     color: ${Colors.WHITE};
   }
