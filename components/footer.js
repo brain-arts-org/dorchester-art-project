@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { getImageUrl } from "takeshape-routing";
 import Markdown from "./markdown";
-import { P, Container, MediaQueries, Img } from "../style";
+import { P, Container, MediaQueries, Img, Colors } from "../style";
 
 const FooterWrapper = styled.footer`
   background: ${props =>
@@ -12,6 +12,13 @@ const FooterWrapper = styled.footer`
   background-size: cover;
   padding-top: 15px;
   padding-bottom: 60px;
+
+  a {
+    color: ${Colors.BLACK};
+
+    &:visited {
+      color: ${Colors.BLACK};
+    }
 `;
 
 const FooterGrid = styled.div`

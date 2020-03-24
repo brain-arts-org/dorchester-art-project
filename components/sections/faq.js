@@ -9,6 +9,14 @@ const Questions = styled.div`
   p {
     color: ${Colors.BLACK};
   }
+
+  a {
+    color: ${Colors.BLACK};
+
+    &:visited {
+      color: ${Colors.BLACK};
+    }
+  }
 `;
 
 const Question = styled.div`
