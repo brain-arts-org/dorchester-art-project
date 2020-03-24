@@ -31,7 +31,7 @@ const FAQ = ({ data }) => (
         {data.questions.map((question, index) => (
           <Question key={index}>
             <H6>{question.question}</H6>
-            <Markdown source={question.answer} />
+            <Markdown source={question.answer} dark={true} />
           </Question>
         ))}
       </Questions>
