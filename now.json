@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "alias": "dorchesterartproject.org",
   "name": "dorchester-art-project",
   "builds": [{ "src": "next.config.js", "use": "@now/next" }],
   "env": {
